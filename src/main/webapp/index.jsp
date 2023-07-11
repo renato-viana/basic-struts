@@ -22,13 +22,32 @@
 		<a href="${helloLink}">Hello Bruce Phillips</a>
 	</p>
 
-	<p>Get your own personal hello by filling out and submitting this form.</p>
+	<p>Get your own personal hello by filling out and submitting this
+		form.</p>
 
 	<s:form action="hello">
 		<s:textfield name="userName" label="Your name" />
 		<s:submit value="Submit" />
 	</s:form>
-	
-	<p><a href="register.jsp">Please register</a> for our prize drawing.</p>
+
+	<s:url action="registerInput" var="registerInputLink">
+		<s:param name="request_locale">en</s:param>
+	</s:url>
+	<p>
+		<a href="${registerInputLink}">Please register</a> for our prize
+		drawing.
+	</p>
+
+	<h3>Registro español</h3>
+	<s:url action="registerInput" var="registerInputLinkES">
+		<s:param name="request_locale">es</s:param>
+	</s:url>
+	<p>
+		<s:a href="%{registerInputLinkES}">Por favor, regístrese</s:a>
+		para nuestro sorteo
+	</p>
+
+	<hr />
+	<s:text name="contact" />
 </body>
 </html>
