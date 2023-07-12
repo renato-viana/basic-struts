@@ -49,5 +49,22 @@
 
 	<hr />
 	<s:text name="contact" />
+
+	<p>
+		<a href='<s:url action="causeexception" />'>Cause Exception</a>
+	</p>
+	<p>
+		<a href='<s:url action="causenullpointerexception" />'>Cause Null
+			Pointer Exception</a>
+	</p>
+	<p>
+		<a href='<s:url action="causesecurityexception" />'>Cause Global
+			Security Exception</a>
+	</p>
+	<p>
+		<a href='<s:url action="actionspecificexception" />'>Cause
+			ActionSpecific Security Exception</a>
+	</p>
+
 </body>
 </html>
